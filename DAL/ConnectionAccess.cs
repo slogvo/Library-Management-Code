@@ -15,7 +15,7 @@ namespace DAL
         {
             //return new SqlConnection(@"Data Source=GIANGPHAN;Initial Catalog=CSDL_QuanLyThuVien;Integrated Security=True");
             //return new SqlConnection(@"Data Source=LAPTOP-MCUHBKRS\SQLEXPRESS;Initial Catalog=QuanLyTV;Integrated Security=True");
-            return new SqlConnection(@"Server=.\SQLExpress;AttachDbFilename=|DataDirectory|\QuanLyTV2.mdf;Integrated Security=True;User Instance=True");
+            return new SqlConnection(@"Server=.\SQLExpress;AttachDbFilename=|DataDirectory|\QuanLyTV.mdf;Integrated Security=True;User Instance=True");
         }
 
         //lenh tra ve mot bang
@@ -53,12 +53,12 @@ namespace DAL
             {
                 NhanVien nv = new NhanVien();
 
-                nv.MaNV =  reader.GetString(0);
+                nv.MaNV = reader.GetString(0);
                 nv.HoTen = reader.GetString(1);
                 nv.MaChucVu = reader.GetString(2);
                 nv.TaiKhoan = reader.GetString(3);
                 nv.MatKhau = reader.GetString(4);
-                nv.Anh = reader.IsDBNull(5) ? "": reader.GetString(5);
+                nv.Anh = reader.IsDBNull(5) ? "" : reader.GetString(5);
 
                 dsNV.Add(nv);
             }
@@ -69,52 +69,52 @@ namespace DAL
 
 
         //lay tat ca thong tin phieu muon
-/*        public string[] getPhieu(string maPhieu)
-        {
-            //lay tat ca Phieu
-            SqlConnection conn = getConnect();
-            conn.Open();
+        /*        public string[] getPhieu(string maPhieu)
+                {
+                    //lay tat ca Phieu
+                    SqlConnection conn = getConnect();
+                    conn.Open();
 
-            string sql1 = "select * from PhieuMuon5 where MaPMuon = '"+ maPhieu + "' ";
-            SqlCommand command = new SqlCommand(sql1, conn);
-            SqlDataReader reader = command.ExecuteReader();
+                    string sql1 = "select * from PhieuMuon5 where MaPMuon = '"+ maPhieu + "' ";
+                    SqlCommand command = new SqlCommand(sql1, conn);
+                    SqlDataReader reader = command.ExecuteReader();
 
-            PhieuMuon pm = new PhieuMuon();
-            while (reader.Read())
-            {
-                pm.MaPhieuMuon = reader.GetString(0);
-                pm.MaDocGia = reader.GetString(1);
-                pm.NgayMuon = reader.GetDateTime(2);
-                pm.MaNhanVien = reader.GetString(3);
-            }
-            conn.Close();
+                    PhieuMuon pm = new PhieuMuon();
+                    while (reader.Read())
+                    {
+                        pm.MaPhieuMuon = reader.GetString(0);
+                        pm.MaDocGia = reader.GetString(1);
+                        pm.NgayMuon = reader.GetDateTime(2);
+                        pm.MaNhanVien = reader.GetString(3);
+                    }
+                    conn.Close();
 
-            conn.Open();
-            //lay ten doc gia
-            string sql2 = "select Hten from DocGia5 where MaDGia = '" + pm.MaDocGia + "' ";
-            SqlCommand command2 = new SqlCommand(sql2, conn);
-            object tenDocGia = command2.ExecuteScalar();
+                    conn.Open();
+                    //lay ten doc gia
+                    string sql2 = "select Hten from DocGia5 where MaDGia = '" + pm.MaDocGia + "' ";
+                    SqlCommand command2 = new SqlCommand(sql2, conn);
+                    object tenDocGia = command2.ExecuteScalar();
 
-            //lay ten nhan vien
-            string sql3 = "select Hten from NhanVien5 where MaNVien = '" + pm.MaNhanVien + "' ";
-            SqlCommand command3 = new SqlCommand(sql3, conn);
-            object tenNhanVien = command3.ExecuteScalar();
+                    //lay ten nhan vien
+                    string sql3 = "select Hten from NhanVien5 where MaNVien = '" + pm.MaNhanVien + "' ";
+                    SqlCommand command3 = new SqlCommand(sql3, conn);
+                    object tenNhanVien = command3.ExecuteScalar();
 
-            //gan
-            string[] list = { pm.MaDocGia, tenDocGia + "", pm.NgayMuon + "", pm.MaNhanVien, tenNhanVien + "" };
+                    //gan
+                    string[] list = { pm.MaDocGia, tenDocGia + "", pm.NgayMuon + "", pm.MaNhanVien, tenNhanVien + "" };
 
-            conn.Close();
-            return list;
-        }*/
+                    conn.Close();
+                    return list;
+                }*/
 
-        
-         //lay thong tin phieu 2
+
+        //lay thong tin phieu 2
         public string[] getPhieu2(string maPhieu)
         {
             SqlConnection conn = getConnect();
             conn.Open();
 
-            string sql = "select PhieuMuon5.MaDGia, DocGia5.Hten, NgayMuon, NhanVien5.MaNVien, NhanVien5.Hten from PhieuMuon5 inner join DocGia5 on PhieuMuon5.MaDGia = DocGia5.MaDGia inner join NhanVien5 on NhanVien5.MaNVien = PhieuMuon5.MaNVien where MaPMuon = '"+maPhieu+"' ";
+            string sql = "select PhieuMuon5.MaDGia, DocGia5.Hten, NgayMuon, NhanVien5.MaNVien, NhanVien5.Hten from PhieuMuon5 inner join DocGia5 on PhieuMuon5.MaDGia = DocGia5.MaDGia inner join NhanVien5 on NhanVien5.MaNVien = PhieuMuon5.MaNVien where MaPMuon = '" + maPhieu + "' ";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
@@ -122,8 +122,8 @@ namespace DAL
             while (reader.Read())
             {
                 param[0] = reader.GetString(0);
-                param[1] = reader.GetString(1); 
-                param[2] = reader.GetDateTime(2)+"";
+                param[1] = reader.GetString(1);
+                param[2] = reader.GetDateTime(2) + "";
                 param[3] = reader.GetString(3);
                 param[4] = reader.GetString(4);
             }
@@ -148,8 +148,8 @@ namespace DAL
             object HoTen = null; //nếu như null thì không tìm thấy
             SqlConnection conn = getConnect();
             conn.Open();
-            string sql = "select HTen from DocGia5 where MaDGia = '"+ma+"' ";
-            SqlCommand cmd = new SqlCommand(sql, conn );
+            string sql = "select HTen from DocGia5 where MaDGia = '" + ma + "' ";
+            SqlCommand cmd = new SqlCommand(sql, conn);
             HoTen = cmd.ExecuteScalar();
 
             return HoTen;
@@ -182,7 +182,8 @@ namespace DAL
         }
 
         //lấy số lượng hiện tại của tài liệu
-        public object getSoLuongTaiLieu(string ma) {
+        public object getSoLuongTaiLieu(string ma)
+        {
             SqlConnection conn = getConnect();
             conn.Open();
 
@@ -199,7 +200,7 @@ namespace DAL
             SqlConnection conn = getConnect();
             conn.Open();
 
-            string sql = "select SLMuon from PhieuMuonChiTiet5 where MaPMuon = '"+maP+"' and MaS = '"+maS+"' ";
+            string sql = "select SLMuon from PhieuMuonChiTiet5 where MaPMuon = '" + maP + "' and MaS = '" + maS + "' ";
             SqlCommand cmd = new SqlCommand(sql, conn);
             object soluong = cmd.ExecuteScalar();
 

@@ -63,16 +63,15 @@
             this.txtTaiKhoan.Location = new System.Drawing.Point(92, 52);
             this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(240, 26);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(240, 22);
             this.txtTaiKhoan.TabIndex = 4;
-            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(92, 93);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(240, 26);
+            this.txtMatKhau.Size = new System.Drawing.Size(240, 22);
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -84,7 +83,7 @@
             this.label4.Location = new System.Drawing.Point(128, 14);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 29);
+            this.label4.Size = new System.Drawing.Size(129, 23);
             this.label4.TabIndex = 9;
             this.label4.Text = "Đăng Nhập";
             // 
@@ -95,7 +94,7 @@
             this.check.Location = new System.Drawing.Point(92, 132);
             this.check.Margin = new System.Windows.Forms.Padding(4);
             this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(162, 24);
+            this.check.Size = new System.Drawing.Size(128, 20);
             this.check.TabIndex = 10;
             this.check.Text = "Hiển thị mật khẩu";
             this.check.UseVisualStyleBackColor = true;
@@ -109,7 +108,7 @@
             this.label2.Location = new System.Drawing.Point(22, 93);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 29);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "              ";
             // 
@@ -122,7 +121,7 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(73, 29);
+            this.label1.Size = new System.Drawing.Size(60, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "          ";
             // 
@@ -163,14 +162,14 @@
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label3.Location = new System.Drawing.Point(64, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(473, 29);
+            this.label3.Size = new System.Drawing.Size(382, 25);
             this.label3.TabIndex = 22;
             this.label3.Text = "CHƯƠNG TRÌNH QUẢN LÝ THƯ VIỆN";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(519, 292);

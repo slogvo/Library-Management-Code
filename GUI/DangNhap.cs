@@ -42,7 +42,7 @@ namespace GUI
                 if (nv.MaChucVu != "CV01") {
                     redirect = false;
                 }
-              
+                ma = nv.MaNV;
             }
 
             //hiển thị form quản trị viên
@@ -82,11 +82,6 @@ namespace GUI
         }
 
         private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
         {
 
         }
