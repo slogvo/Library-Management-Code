@@ -36,6 +36,7 @@ namespace GUI
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!");
                 return;
             }
+
             string ma = "";
             foreach(NhanVien nv in list)
             {
@@ -63,7 +64,7 @@ namespace GUI
             this.Hide();
         }
 
-        private void check_CheckedChanged(object sender, EventArgs e)
+        private void Check_CheckedChanged(object sender, EventArgs e)
         {
             txtMatKhau.UseSystemPasswordChar = false;
             if (!check.Checked) {
@@ -79,11 +80,6 @@ namespace GUI
             {
                 Application.Exit();
             }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

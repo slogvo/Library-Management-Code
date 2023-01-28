@@ -13,8 +13,6 @@ namespace DAL
 
         public SqlConnection getConnect()
         {
-            //return new SqlConnection(@"Data Source=GIANGPHAN;Initial Catalog=CSDL_QuanLyThuVien;Integrated Security=True");
-            //return new SqlConnection(@"Data Source=LAPTOP-MCUHBKRS\SQLEXPRESS;Initial Catalog=QuanLyTV;Integrated Security=True");
             return new SqlConnection(@"Server=.\SQLExpress;AttachDbFilename=|DataDirectory|\QuanLyTV.mdf;Integrated Security=True;User Instance=True");
         }
 

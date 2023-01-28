@@ -206,7 +206,7 @@
             this.label1.Location = new System.Drawing.Point(336, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 24);
+            this.label1.Size = new System.Drawing.Size(126, 29);
             this.label1.TabIndex = 22;
             this.label1.Text = "THỦ THƯ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -239,15 +239,15 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 424);
+            this.label6.Location = new System.Drawing.Point(3, 422);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(242, 13);
+            this.label6.Size = new System.Drawing.Size(226, 17);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Nhóm 5 - Lớp Khoa Học máy tính 2 - K12";
+            this.label6.Text = "Nhóm 13 - Lập trình trực quan";
             // 
             // TrangChu_ThuThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(767, 437);

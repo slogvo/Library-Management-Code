@@ -112,3 +112,14 @@ C:\Users\ASUS\Desktop\Library-Management-Code\DAL\obj\Debug\DAL.csproj.CoreCompi
 C:\Users\ASUS\Desktop\Library-Management-Code\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Library-Management-Code\DAL\obj\Debug\DAL.dll
 C:\Users\ASUS\Desktop\Library-Management-Code\DAL\obj\Debug\DAL.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\QuanLyTV.mdf
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\QuanLyTV_log.ldf
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\DAL.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\DAL.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\DTO.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\bin\Debug\DTO.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\obj\Debug\DAL.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\DAL\obj\Debug\DAL.pdb

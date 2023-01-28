@@ -74,8 +74,9 @@ namespace GUI
                     LoadData();
                     btnNhapLai_Click(sender, e);
                 }
-                catch
+                catch(Exception loi)
                 {
+                    Console.WriteLine(loi.Message);
                     MessageBox.Show("Lỗi thêm!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -209,6 +210,11 @@ namespace GUI
             {
                 Application.Exit();
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

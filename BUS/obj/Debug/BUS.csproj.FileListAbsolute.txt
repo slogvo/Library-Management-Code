@@ -138,3 +138,16 @@ C:\Users\ASUS\Desktop\Library-Management-Code\BUS\obj\Debug\BUS.csproj.CoreCompi
 C:\Users\ASUS\Desktop\Library-Management-Code\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Library-Management-Code\BUS\obj\Debug\BUS.dll
 C:\Users\ASUS\Desktop\Library-Management-Code\BUS\obj\Debug\BUS.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\QuanLyTV.mdf
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\QuanLyTV_log.ldf
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\BUS.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\BUS.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\DAL.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\DTO.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\DAL.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\bin\Debug\DTO.pdb
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\obj\Debug\BUS.dll
+C:\Users\ASUS\Source\Repos\Library-Management-Code\BUS\obj\Debug\BUS.pdb

@@ -150,12 +150,15 @@
     </Compile>
     <EmbeddedResource Include="ChucVuGUI.resx">
       <DependentUpon>ChucVuGUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DocGiaGUI.resx">
       <DependentUpon>DocGiaGUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DoiThongTin.resx">
       <DependentUpon>DoiThongTin.cs</DependentUpon>
