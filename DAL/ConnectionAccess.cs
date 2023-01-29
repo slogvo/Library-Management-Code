@@ -56,7 +56,7 @@ namespace DAL
                 nv.MaChucVu = reader.GetString(2);
                 nv.TaiKhoan = reader.GetString(3);
                 nv.MatKhau = reader.GetString(4);
-                nv.Anh = reader.IsDBNull(5) ? "" : reader.GetString(5);
+                nv.Quyen = reader.IsDBNull(5) ? "Thủ thư" : reader.GetString(5);
 
                 dsNV.Add(nv);
             }

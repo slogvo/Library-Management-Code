@@ -32,29 +32,32 @@ namespace GUI
             List<NhanVien> list = new List<NhanVien>();
             list = obj_BUS.dangnhap(txtTaiKhoan.Text, txtMatKhau.Text);
 
-            if (list.Count == 0) {
+            if (list.Count == 0)
+            {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!");
                 return;
             }
 
             string ma = "";
-            foreach(NhanVien nv in list)
+            foreach (NhanVien nv in list)
             {
-                if (nv.MaChucVu != "CV01") {
+                if (nv.MaChucVu != "CV01")
+                {
                     redirect = false;
                 }
                 ma = nv.MaNV;
             }
 
             //hiển thị form quản trị viên
-            if (redirect) {
+            if (redirect)
+            {
                 var form = new TrangChu_QuanTriVien();
                 form.maNV = ma;
                 form.Show();
                 this.Hide();
 
                 //truyen tai khoan
-                     
+
                 return;
             }
             //hiển thị trang chủ thủ thư
@@ -67,7 +70,8 @@ namespace GUI
         private void Check_CheckedChanged(object sender, EventArgs e)
         {
             txtMatKhau.UseSystemPasswordChar = false;
-            if (!check.Checked) {
+            if (!check.Checked)
+            {
                 txtMatKhau.UseSystemPasswordChar = true;
                 return;
             }
